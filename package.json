@@ -1,0 +1,116 @@
+{
+  "name": "kp-admin",
+  "version": "2.0.0",
+  "private": true,
+  "author": "Dylan Jackson",
+  "homepage": "./",
+  "license": "",
+  "description": "KP Admin Panel",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/ct-material-dashboard-pro-react.git"
+  },
+  "engines": {
+    "node": "14 || 15 || 16",
+    "npm": ">=6"
+  },
+  "dependencies": {
+    "@asseinfo/react-kanban": "2.2.0",
+    "@azure/msal-browser": "^2.20.0",
+    "@azure/msal-node": "^1.8.0",
+    "@capacitor/core": "^3.4.3",
+    "@capacitor/storage": "^1.2.5",
+    "@emotion/cache": "11.4.0",
+    "@emotion/react": "11.4.1",
+    "@emotion/styled": "11.3.0",
+    "@fullcalendar/daygrid": "5.9.0",
+    "@fullcalendar/interaction": "5.9.0",
+    "@fullcalendar/react": "5.9.0",
+    "@fullcalendar/timegrid": "5.9.0",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "5.2.0",
+    "@mui/styled-engine": "5.2.0",
+    "@react-jvectormap/core": "1.0.0-alpha.7",
+    "@react-jvectormap/world": "1.0.0-alpha.4",
+    "@testing-library/jest-dom": "5.11.4",
+    "@testing-library/react": "11.1.0",
+    "@testing-library/user-event": "12.1.10",
+    "axios": "^0.24.0",
+    "chart.js": "3.4.1",
+    "chroma-js": "2.1.2",
+    "concurrently": "^7.1.0",
+    "defer-to-connect": "^2.0.1",
+    "dropzone": "5.9.2",
+    "electron": "^18.0.3",
+    "flatpickr": "4.6.9",
+    "formik": "2.2.9",
+    "prop-types": "15.7.2",
+    "react": "17.0.2",
+    "react-chartjs-2": "3.0.4",
+    "react-dom": "17.0.2",
+    "react-flatpickr": "3.10.7",
+    "react-github-btn": "1.2.1",
+    "react-html-parser": "2.0.2",
+    "react-images-viewer": "1.6.7",
+    "react-quill": "1.3.5",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "6.0.2",
+    "react-scripts": "4.0.3",
+    "react-table": "7.7.0",
+    "react-to-print": "^2.14.2",
+    "redux": "^4.1.2",
+    "run-parallel": "^1.2.0",
+    "stylis": "4.0.10",
+    "stylis-plugin-rtl": "2.1.0",
+    "uuid": "8.3.2",
+    "web-vitals": "1.0.1",
+    "yup": "0.32.9"
+  },
+  "main": "src/electron-starter.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "startAll": "concurrently \"react-scripts start\" \"electron .\"",
+    "startreact": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "electron": "npm run build && electron .",
+    "build:portable": "npm run build && npx electron-packager . --overwrite"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.4.3",
+    "electron": "^18.0.3",
+    "electron-packager": "^15.4.0",
+    "eslint": "7.30.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-react": "7.24.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "prettier": "2.3.2"
+  }
+}

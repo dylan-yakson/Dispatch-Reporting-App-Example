@@ -1,0 +1,6 @@
+{
+  "appId": "com.kpautomate.app",
+  "appName": "kp-automate",
+  "webDir": "build",
+  "bundledWebRuntime": true,
+}
